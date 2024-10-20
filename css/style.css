@@ -523,7 +523,7 @@ ol {
 @media (max-width: 768px) {
     .custom-video {
         width: 100%;
-        height: auto; /* Adjust height to auto for better fit */
+        height: 200px; /* Adjust height to auto for better fit */
         border: 3px solid #ff4081; /* Adjust border width for smaller screens */
     }
 
