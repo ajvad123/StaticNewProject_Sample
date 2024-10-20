@@ -494,38 +494,46 @@ ol {
 
 /* video */
 .custom-video {
-	width: 75%;
-	/* 75% of the parent container's width */
-	height: 80vh;
-	/* 50% of the viewport height */
-	border: 5px solid #ff4081;
-	/* Stylish pink border */
-	border-radius: 15px;
-	/* Rounded corners */
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-	/* Attractive shadow for depth */
-	object-fit: cover;
-	/* Ensures the video fits within the frame */
-	transition: transform 0.3s ease;
-	/* Smooth zoom on hover */
+    width: 75%;
+    height: 80vh;
+    border: 5px solid #ff4081;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .custom-video:hover {
-	transform: scale(1.05);
-	/* Slight zoom effect on hover */
+    transform: scale(1.05);
 }
 
-/* Center the video and text if needed */
 .Ab-video {
-	text-align: center;
-	margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .pic-text {
-	margin-top: 10px;
-	font-size: 16px;
-	font-weight: bold;
-	color: #333;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    .custom-video {
+        width: 100%;
+        height: auto; /* Adjust height to auto for better fit */
+        border: 3px solid #ff4081; /* Adjust border width for smaller screens */
+    }
+
+    .Ab-video {
+        margin-top: 10px;
+    }
+
+    .pic-text {
+        font-size: 14px; /* Slightly smaller text for mobile */
+    }
 }
 
 
