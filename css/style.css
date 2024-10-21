@@ -1534,12 +1534,15 @@ html {
 	}
 	
 	.slicknav_menu .slicknav_menutxt {
-		display: none; /* Hides the "Menu" text */
+		display: flex; /* Hides the "Menu" text */
+		padding-top: 9px;
+		color: #000;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 	
 	.slicknav_menu .slicknav_btn {
 		background: none !important; /* Removes the background from the button */
-		padding: 0; /* Removes padding to make it smaller */
+		padding-right: 30px; /* Removes padding to make it smaller */
 		display: flex;
 		align-items: center;
 		justify-content: center;
